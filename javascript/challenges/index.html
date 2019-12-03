@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" container="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Challenge one</title>
+</head>
+<body>
+	<div class="container-1">
+		<h1>Challenge One: Your Age in Days</h1>
+		<div class="flex-box-container-1">
+			<div>
+				<button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+			</div>
+
+			<div>
+				<button class="btn btn-danger" onclick="reset()">reset</button>
+			</div>
+		</div>
+
+		<div class="flex-box-container-1">
+			<div id="flex-box-result"></div>
+		</div>
+	</div>
+
+	
+
+	<div class="container-2">
+		<h1>Challenge Two: Image Generator</h1>
+		<button class="btn btn-success" id="image-generator" onclick="generateImage()">Generate Image</button>
+		<button class="btn btn-danger" id="image-clear" onclick="clearImage()">ClearImage</button>
+
+		<div class="flex-box-container-2" id="flex-image-gen">
+
+		</div>
+	</div>
+
+
+
+	<div class="container-3">
+		<h1>Challenge Three: Rock, Paper, Scissors</h1>
+		<div class="flex-box-rps" id="flex-box-rps-div">
+			<img id="rock" src="http://clipart-library.com/data_images/301806.png" height=150 width=150 alt="rock_image" onclick="rpsGame(this)">
+
+			<img id="paper" src="https://myrealdomain.com/images/animated-paper-clipart-2.jpg" height=150 width=150 alt="paper_image" onclick="rpsGame(this)">
+
+			<img id="scissors" src="http://www.freepngclipart.com/download/scissors/38578-cartoon-scissors-hd-photos.png" height=150 width=150 alt="scissors_image" onclick="rpsGame(this)">
+
+		</div>
+
+	</div>
+
+
+	<div class="container-4">
+		<h1 id="change-my-color">Challenge Four: Change the Color of All Buttons</h1>
+		<div class="flex-box-pick-color">
+			<form action="">
+				<select name="backdrop" id="background" onchange="buttonColorChange(this)">
+					<option value="random">Random</option>
+				    <option value="red">Red</option>
+				    <option value="green">Green</option>
+				    <option value="reset">Reset</option>
+				</select>
+		    </form>
+
+		    <button class="btn btn-primary">Microsoft!</button>
+		    <button class="btn btn-danger">Google!</button><button class="btn btn-warning">LinkedIn!</button><button class="btn btn-success">Tesla!</button>
+
+		</div> 
+	</div>	   
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

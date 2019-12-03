@@ -1,0 +1,17 @@
+// its used to represnt data... generally used for api's and configurations
+// to carry light data
+[
+    {
+    	"name": "maka",
+    	"age": 21,
+    	"height":175
+    },
+    {
+    	"name":"n",
+    	"age": 20,
+    	"height": 150
+    }
+
+
+
+]
